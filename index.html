@@ -15,12 +15,11 @@
     <title>Shopping List</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="contentGlobal">
       <header>
         <img src="images/note.png" alt="" />
         <h1>Shopping List</h1>
       </header>
-      <!-- id="item-form" -->
       <form id="item-form">
         <div class="form-control">
           <input
@@ -40,42 +39,22 @@
         
       </form>
       <!-- FILTER -->
-      <div class="filter">
-        
+      <!-- style="display: none;" -->
+      <div class="filter"  id = "idFilterElemnt" style="visibility: hidden;">
         <input
           type="text"
           class="form-input-filter"
           id="filter"
           placeholder="Filter Items"
-        
         />
       </div>
-      <!-- LISTAS  -->
-      <ul  id="item-list" class="items" >
-        <li>
-          Apples
-          <button class="remove-item btn-link text-red">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        <li>
-          Orange Juice
-          <button class="remove-item btn-link text-red">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        <li>
-          Oreos
-          <button class="remove-item btn-link text-red">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        
+      
+      <ul id="item-list" class="items" style="visibility: hidden;">
         
       </ul>
-
-
-      <button id="clear" class="btn-clear">Clear All</button>
+      
+      
+      <button id="clear" class="btn-clear" style="visibility: hidden;">Clear All</button>
     </div>
 
     <script src="script.js"></script>
